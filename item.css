@@ -71,6 +71,7 @@ a {
     color: inherit;
 }
 header, footer {
+    background-color: var(--dark-bg-solid) ;
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
 }
@@ -79,7 +80,7 @@ ul, ol {
 }
 
 p {
-    font-size: 1.8em;
+    font-size: 2.4em;
 }
 
 .container {
