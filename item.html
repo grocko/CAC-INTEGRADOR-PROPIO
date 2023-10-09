@@ -11,25 +11,36 @@
     </head>
     <body>
         <header>
-            <nav>
-                <picture>
+            <nav class="navbar-header container">
+                <picture class="navbar-header__logo">
                     <a href="">
                         <img src="./img/branding/logo_light_horizontal.svg" alt="logo de la marca Funkoshop">
                     </a>
                 </picture>
                
-                <ul>
-                    <li>
-                        <a href="./pages/.shop.html">SHOP</a>
+                <ul class="navbar-header__menu">
+                    <li class="navbar-header__item with-submenu">
+                        <a class="navbar-header__link con-icono " href="./pages/.shop.html">SHOP<iconify-icon icon="radix-icons:chevron-down"></iconify-icon></a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Funkos</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Remeras</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Llaveros</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="./pages/.contacto.html">CONTACTO</a>
+                    <li class="navbar-header__item">
+                        <a class="navbar-header__link" href="./pages/.contacto.html">CONTACTO</a>
                     </li>
-                    <li>
-                        <a href="./pages/.login.html">LOGIN</a>
+                    <li class="navbar-header__item">
+                        <a class="navbar-header__link" href="./pages/.login.html">LOGIN</a>
                     </li>
-                    <li>
-                        <a href="./pages/.carrito.htm">
+                    <li class="navbar-header__item">
+                        <a class="navbar-header__linkcarrito" href="./pages/.carrito.htm">
                             <img src="./img/icons/cart-icon.svg" alt="icono acceso al carrito">
                         </a>
                     </li>
@@ -133,5 +144,6 @@
             <p>All rights reserved 2023 - Funkoshop &copy;</p>
         </footer>
         <script src="" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     </body>
 </html>

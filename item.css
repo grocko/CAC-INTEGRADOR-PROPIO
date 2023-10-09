@@ -41,6 +41,7 @@
     --spacing-36: 3.6rem;
     --spacing-28: 2.8rem;
     --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
     --spacing-18: 1.8rem;
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
@@ -66,10 +67,12 @@ html {
 
 a {
     text-decoration: none;
-    font-size: 2em;
     font-family: inherit;
     color: inherit;
 }
+
+
+
 header, footer {
     background-color: var(--dark-bg-solid) ;
     font-family: var(--alternative-font);
@@ -83,7 +86,76 @@ p {
     font-size: 2.4em;
 }
 
+img {
+    width: 100%;
+}
+
 .container {
-    max-width: 1200;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    padding: var(--spacing-36);
+}
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar-header__logo {
+    max-width: 372px;
+    max-height: 65.19px;
+}
+
+.navbar-header__menu { 
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: var(--spacing-20);
+}
+
+.navbar-header__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+    
+}
+
+.navbar-header__link:hover {    
+    background-color: var(--primary-900);
+}
+
+.con-icono { 
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+.with-submenu:hover .submenu {
+    display: block;
+
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    width: 300px;
+}
+
+.submenu__link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    transition: background .3s ease-in-out;
+    font-size: var(--font-medium);
+}
+
+.submenu__link:hover {
+    background-color: var(--primary-900);
 }
