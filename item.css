@@ -159,3 +159,12 @@ header {
 .submenu__link:hover {
     background-color: var(--primary-900);
 }
+
+/* MAIN */
+/* ITEM */
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
