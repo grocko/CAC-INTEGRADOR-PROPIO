@@ -44,6 +44,7 @@
     --spacing-20: 2rem;
     --spacing-18: 1.8rem;
     --spacing-16: 1.6rem;
+    --spacing-14: 1.4rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
     
@@ -161,10 +162,73 @@ header {
 }
 
 /* MAIN */
-/* ITEM */
+/*** ITEM ***/
 
 .item {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
+
+.item__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24);
+    align-items: start;
+
+}
+
+.item__colection {
+    font-family: var(--primary-font);
+    font-size: var(--font-small);
+    font-weight: 500;
+
+}
+
+.item__title {
+    font-family: var(--primary-font);
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+}
+
+.item__text {
+    font-family: var(--primary-font);
+    font-size: var(--font-large);
+    font-weight: 400;
+}
+
+.item__price {
+    font-family: var(--primary-font);
+    font-size: var(--font-jumbo);
+    font-weight: 400;
+}
+
+
+.item__addcart {
+    display: inline-block;
+    font-family: var(--primary-font);
+    font-size: var(--font-medium);
+    background-color: #ff3333;
+    color: var(--light-font-solid);
+    padding: var(--spacing-14);
+    font-weight: 400;
+    transition: background .3s ease-in-out;
+}
+
+.item__addcart:hover{
+    background-color: var(--dark-bg-solid);
+    
+
+}
+.item__metodospago {
+    font-family: var(--primary-font);
+    font-size: var(--font-xsmall);
+    font-weight: 700;
+    color: var(--secondary-solid);
+}
+
+#itemlink {
+    text-decoration:underline;
+}
+
+/*** PRIDUCTOS RELACIONADOS ***/
