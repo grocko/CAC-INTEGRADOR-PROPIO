@@ -75,7 +75,7 @@ a {
 
 
 
-header, footer {
+header{
     background-color: var(--dark-bg-solid) ;
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
@@ -321,6 +321,50 @@ header {
     color: var(--secondary-solid);
 }
 
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--dark-bg-solid) ;
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+    padding: var(--spacing-68);
+}
+
+.navbar-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.navbar-footer__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+    
+}
+
+.navbar-footer__link:hover {    
+    background-color: var(--primary-900);
+}
+
+.footer__derechos {
+    text-align: center;
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    font-weight: 500;
+    margin-top: var(--spacing-36);
+
+}
+
+/* ANIMACIONES */
+
 @keyframes fade {
     0% {
         opacity: 0;
@@ -329,3 +373,4 @@ header {
         opacity: 1;
     }
 }
+
