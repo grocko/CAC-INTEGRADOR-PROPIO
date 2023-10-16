@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
-
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
 
 :root {
     /* Pateta */
@@ -204,7 +205,10 @@ header {
     font-weight: 400;
 }
 
-
+.item__cantidad {
+    display: flex;
+    align-items: center;
+}
 .item__addcart {
     display: inline-block;
     font-family: var(--primary-font);
@@ -241,10 +245,10 @@ header {
     margin: var(--spacing-36) auto;
 }
 
-.slider__items {
+/* .slider__items {
     display: flex;
     gap: var(--spacing-36);
-}
+} */
 
 .slider__title {
     font-family: var(--alternative-font);
@@ -252,6 +256,22 @@ header {
     font-size: var(--font-display);
     color: #111111;
 }
+
+iconify-icon {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 900;
+    
+}
+
+.glide__arrow--left {
+    left: 0;
+}
+
+.glide__arrow--right {
+    right: 0;
+}
+
 
 .card-item__cover {
     display: flex;
