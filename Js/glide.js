@@ -6,10 +6,10 @@ new Glide('.glide', {
     gap: 30,
     breakpoints: {
         991: {
-            preView: 2
+            perView: 2
         },
         768: {
-            preView: 1
+            perView: 1
         }
     }
 }).mount()
