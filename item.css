@@ -222,9 +222,10 @@ header {
     font-weight: 400;
 }
 
-.item__cantidad {
+.item__cart{
     display: flex;
     align-items: center;
+    gap: var(--spacing-18);
 }
 .item__addcart {
     display: inline-block;
