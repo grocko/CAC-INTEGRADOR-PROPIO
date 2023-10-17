@@ -172,6 +172,23 @@ header {
     align-items: center;
 }
 
+.item__picture img {
+    display: flex;
+    animation: fade 0.7s;
+}
+
+.item__picture .item__picture__img--back {
+    display: none;
+}
+
+.item__picture:hover .item__picture__img--back { 
+    display: block;
+}
+
+.item__picture:hover .item__picture__img--front { 
+    display: none;
+}
+
 .item__content {
     display: flex;
     flex-direction: column;
