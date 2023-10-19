@@ -234,6 +234,7 @@ header {
     font-size: var(--font-xlarge);
     max-width: 150px;
     text-align: center;
+    
 }
 
 .item__cart__controls {
