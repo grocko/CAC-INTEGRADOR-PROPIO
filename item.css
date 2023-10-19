@@ -255,7 +255,7 @@ header {
     background-color: var(--primary-solid);
     color: var(--light-font-solid); 
     padding: var(--spacing-8) var(--spacing-16);    
-
+    border: none;
 }
 
 .item__cart .item__submit:hover {
