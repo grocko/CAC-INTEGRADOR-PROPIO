@@ -49,6 +49,8 @@
     --spacing-14: 1.4rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
+    --spacing-4: 0.4rem;
+    --spacing-2: 0.2rem;
     
 
 
@@ -227,6 +229,27 @@ header {
     align-items: center;
     gap: var(--spacing-18);
 }
+
+.item__input {
+    font-size: var(--font-xlarge);
+    max-width: 150px;
+    text-align: center;
+}
+
+.item__cart__controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4)
+}
+
+.item__cart__controls .item__quantity {
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    font-size: var(--font-xxsmall);
+    padding: var(--spacing-2) var(--spacing-4);
+    border: none;
+}
+
 .item__addcart {
     display: inline-block;
     font-family: var(--primary-font);
@@ -275,7 +298,7 @@ header {
     color: #111111;
 }
 
-iconify-icon {
+.glide__arrow > iconify-icon {
     color: var(--dark-bg-solid);
     font-size: var(--font-small);
     font-weight: 900;
